@@ -63,6 +63,7 @@ const VidoeListItem = (props: VideoListItemProps) => {
             uri: video.user.image
           }}
         />
+
         {/* Middle container: Title, subtitle, etc. */}
         <View style={styles.middleContainer}>
           <Text style={styles.title}>{video.title}</Text>
@@ -70,6 +71,7 @@ const VidoeListItem = (props: VideoListItemProps) => {
             style={styles.subtitle}
           >{`${video.user.name} ${viewString} ${video.createdAt}`}</Text>
         </View>
+
         {/* Icon */}
         <Entypo name="dots-three-vertical" size={18} color="white" />
       </View>
